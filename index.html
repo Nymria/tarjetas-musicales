@@ -84,6 +84,45 @@
         <button class="score-button button3" id="button3">Jugador 3</button>
         <button class="score-button button4" id="button4">Jugador 4</button>
     </div>
+
+    <script>
+        // Base de datos de tarjetas
+        const tarjetas = [
+            {
+                categoria: "Tararea",
+                texto: "Tararea una de estas tres canciones: 'Despacito', 'Shape of You', 'Bohemian Rhapsody'.",
+                solucion: "La canción que tarareas."
+            },
+            {
+                categoria: "Completa la letra",
+                texto: "Camins vora ______, camins que ja son nous.",
+                solucion: "Les estrelles de la canción Camins."
+            },
+            {
+                categoria: "Pregunta sobre la letra",
+                texto: "¿Qué tiene negro Juanes?",
+                solucion: "La camisa y el alma, de la canción La camisa negra."
+            }
+            // Puedes agregar más tarjetas aquí...
+        ];
+    
+        // Función para cambiar la tarjeta al azar
+        function cambiarTarjeta() {
+            // Elegir una tarjeta aleatoria
+            const tarjetaAleatoria = tarjetas[Math.floor(Math.random() * tarjetas.length)];
+    
+            // Actualizar el contenido de la tarjeta
+            document.getElementById("category").textContent = tarjetaAleatoria.categoria;
+            document.getElementById("text").textContent = tarjetaAleatoria.texto;
+            document.getElementById("solution").textContent = tarjetaAleatoria.solucion;
+        }
+    
+        // Llamar a la función cambiarTarjeta cuando se haga clic en el botón "Siguiente"
+        document.getElementById("next-button").addEventListener("click", cambiarTarjeta);
+    
+        // Llamar a la función al cargar la página para mostrar una tarjeta inicial
+        window.onload = cambiarTarjeta;
+    </script>
 </body>
 </html>
 
