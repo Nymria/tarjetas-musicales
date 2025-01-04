@@ -2,9 +2,88 @@
 <html>
 <head>
     <title>Juego Musical</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+        .card {
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .category {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .text {
+            font-size: 1em;
+            margin: 20px 0;
+        }
+        .solution {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .next-button {
+            display: block;
+            width: 80%;
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .score-button {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .button1 { background-color: #FF5722; }
+        .button2 { background-color: #2196F3; }
+        .button3 { background-color: #FFC107; }
+        .button4 { background-color: #8BC34A; }
+    </style>
 </head>
 <body>
-    <h1>Bienvenido al juego musical</h1>
-    <p>¡Haz clic para empezar!</p>
+    <h1>Juego Musical</h1>
+    <div class="card">
+        <div class="category" id="category">Categoría</div>
+        <div class="text" id="text">Texto de la tarjeta</div>
+        <div class="solution" id="solution">Solución</div>
+    </div>
+    <button class="next-button" id="next-button">Siguiente</button>
+    <div class="buttons-container">
+        <button class="score-button button1" id="button1">Jugador 1</button>
+        <button class="score-button button2" id="button2">Jugador 2</button>
+        <button class="score-button button3" id="button3">Jugador 3</button>
+        <button class="score-button button4" id="button4">Jugador 4</button>
+    </div>
 </body>
 </html>
+
