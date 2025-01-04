@@ -7,33 +7,16 @@ body {
 }
 
 #titulo {
-    font-size: 2.5em;  /* Aumentamos el tamaño del título */
-    font-weight: bold; /* Hacemos el título más visible */
-    margin-bottom: 30px;  /* Aumentamos el espacio entre el título y la tarjeta */
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 #tarjeta {
     background-color: #ffffff;
     border-radius: 8px;
-    padding: 30px;  /* Aumentamos el padding dentro de la tarjeta */
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-}
-
-#categoria {
-    font-size: 1.5em;  /* Aumentamos el tamaño de la categoría */
-    font-weight: bold;
-    margin-bottom: 15px;  /* Espacio entre la categoría y el texto */
-}
-
-#texto {
-    font-size: 1.2em;  /* Tamaño de la letra para el texto de la tarjeta */
-    margin-bottom: 20px;  /* Espacio entre el texto y la solución */
-}
-
-#solucion {
-    font-size: 1.1em;  /* Tamaño de la letra para la solución */
-    color: #555;
 }
 
 button {
